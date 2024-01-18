@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Figtree', sans-serif;
+    min-height: 100vh;
+    background-color: hsl(47, 88%, 63%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 400px;
+    height: 70%;
+    background-color: white;
+    border-radius: 20px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+
+}
+
+.hero>img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.btn {
+    background-color: hsl(47, 88%, 63%);
+    width: 30%;
+    height: 5%;
+    font-weight: 600;
+    position: relative;
+    left: 4%;
+}
+
+.sub-title {
+    position: relative;
+    padding: 6px;
+    font-size: 16px;
+    font-weight: 200;
+    top: 5px;
+    left: 4%;
+}
+
+.title {
+    position: absolute;
+    bottom: 41.6%;
+    left: 4%;
+    font-weight: 600;
+}
+
+.sub1-title {
+    position: absolute;
+    left: 4%;
+    bottom: 31%;
+    color: hsl(0, 0%, 50%)
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    position: absolute;
+    padding: 7%;
+    left: 1%;
+    bottom: 5%;
+}
+
+.bottom>img {
+    left: 2%;
+    size: 3rem;
+}
+
+.name {
+    right: -74%;
+    font-size: medium;
+    position: absolute;
+    font-weight: 100;
+
+}
+
+@media only screen and (max-width: 475px){
+
+    .container{
+        max-width: 80%;
+        height: 50%;
+    }
+
+    .btn{
+        width: 40%;
+        left: 8%;
+    }
+    .sub-title{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 6%;
+        left: -2%;
+        font-size: 16px;
+        
+    }
+    .title{
+        /* display: flex;
+        align-items: center;
+        justify-content: center; */
+        position: absolute;
+        top:55%;
+        
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .sub1-title{
+        position: absolute;
+        bottom: 20%;
+        font-size: 16px;
+    }
+    .bottom{
+        position: absolute;
+        bottom: -1%;
+        gap: 12px;
+    }
+    .name{
+        right: -89%;
+    }
+}
